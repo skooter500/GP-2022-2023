@@ -1,4 +1,4 @@
-# Game Programming 2021-2022
+# Game Programming 2022-2023
 
 [![YouTube](http://img.youtube.com/vi/xF7VrXZqLko/0.jpg)](https://www.youtube.com/watch?v=xF7VrXZqLko)
 
@@ -29,190 +29,14 @@ Resources
 ## Contact the lecturer
 * Email: bryan.duggan@tudublin.ie
 * [My website & other ways to contact me](http://bryanduggan.org)
-* Email (Senja): anhduong.trinh@tudublin.ie
 
 ## Assignments
 
-- Monday 6th December - Assignment 1 submission 15%
-- Monday 13th - December Lab Test 25%
-- Assignment 2 - 31st January 15%
-- Assignment 3 - TBC 20% 
+- December - Assignment 1 submission 15%
+- December Lab Test 25%
+- Assignment 2 31st January 15%
+- Assignment 3 20% 
 - End of Year lab test - TBC 25%
-
-# Semester 2
-
-## Week 6
-## Lab
-- [Worksheet](https://1drv.ms/w/s!Ak7y2552PWCrhft_--GKn97-v56DhA?e=X3AN9x)
-
-Make this in Processing:
-
-[![YouTube](http://img.youtube.com/vi/Nu1reFsEBrY/0.jpg)](https://youtu.be/Nu1reFsEBrY)
-
-
-## Week 1
-
-### Lab
-
-## Part 1
-Try the lerping technique on the actual audio samples. To do this:
-- Make an array of type float the same size as the audio buffer
-- Lerp each element of the array to the corresponding buffer element
-- Draw using the lerped values instead of the buffer values
-
-## Part 2 
-- Make this little ellipse whose size and speed of movement is controlled by how loud the sound it:
-
-[![YouTube](http://img.youtube.com/vi/5Twdbqxrpdg/0.jpg)](https://www.youtube.com/watch?v=5Twdbqxrpdg)
-
-## Part 3
-- See what other drawing elements - rectangles, triangles etc you can control using the average amplitude of the sound
-
-Some audio responsive stuff I have been working on recently:
-
-[![YouTube](http://img.youtube.com/vi/4Fc_OW4M5AU/0.jpg)](https://www.youtube.com/watch?v=4Fc_OW4M5AU)
-
-[![YouTube](http://img.youtube.com/vi/xF7VrXZqLko/0.jpg)](https://www.youtube.com/watch?v=xF7VrXZqLko)
-
-[![YouTube](http://img.youtube.com/vi/KNymjRyr27A/0.jpg)](https://www.youtube.com/watch?v=KNymjRyr27A)
-
-
-
-# Week 8 - Lab Test 1
-[Link to Lab Test 1](https://github.com/skooter500/GP-2021-2022/blob/master/Lab_Test_1.md)
-
-
-# Week 7 - Functions
-
-### Learning Outcomes
-
-Learning to define and use *Functions* in Processing
-- Concept of functions in Programming
-- Defining a function
-- Arguments of a function
-- Type of a function
-
-## Lab - The Game of Life
-
-Write the method ```updateBoard```. This method should iterate over the board cell by cell using a nested for loop and apply the Game of Life rules:
-
-1. If the cell is alive (true) then if the cell has exactly 2 or 3 neighbours it survives (gets set to true), otherwise it dies (gets set to false)
-2. If the cell is dead (false) then it comes to life if it has exactly 3 neighbours, otherwise it stays dead in the next generation.
-
-This is important so please read carefully!!
-
-You have to read values from *board*, but you set values in *next*, which is a 2D array the same size as board. At the end of the method you *swap* board and next. I have left the swapping code in the method, so you don't have to write it. This is so that when you for example, kill a cell or bring a cell to life, you don't screw up the count for other cells in that generation.
-
-Again - in ```updateBoard```
-
-1. Write a nested for loop that gets the row and col for every cell
-2. Count the neighbours (use the method we wrote on Monday for this) 
-2. Check if the cell is alive, apply the rules for alive cells to next
-2. If the cell is dead, apply the rules for dead cells to next
-2. Swap board and next
-
-Your game of life should look like this if you implement the rules correctly (click the image for a video):
-
-[![YouTube](http://img.youtube.com/vi/SmH2r_ChmFY/0.jpg)](https://www.youtube.com/watch?v=SmH2r_ChmFY)
-
-Some extra things you can implement you can see in the video:
-
-- Increase size and change the size of the screen and see what effect this has on the simulation 
-- Press space to pause and resume the simulation
-- Press 1 to randomise the board again
-- Press 2 to clear the board
-- Press 3 to draw a cross shape and see how it evolves
-- Drag the mouse across the window to set cells at the mouse position to be alive.
-
-Some extra things you can implement that are not in the video
-
-- Draw a glider at the mouse position. This is starting pattern that will evolve a pattern that walks across the screen
-- Draw a Gosper Gun at the mouse position. This is a starting pattern that will spawn creatures indefinitely
-
-You can read more about these starting patterns and others in [this wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) and see examples in this video:
-
-[![YouTube](http://img.youtube.com/vi/HMYh4jKdtNU/0.jpg)](https://www.youtube.com/watch?v=HMYh4jKdtNU)
-
-If you want to learn more about cellular automata check out: 
-
-- [The Nature of Code](https://natureofcode.com/)
-- [A New Kind of Science](https://writings.stephenwolfram.com/2017/05/a-new-kind-of-science-a-15-year-view/)
-
-
-# Week 6 - Arrays
-
-### Learning Outcomes
-- Learning arrays in programming
-- Practising array operatios
-- Using loops in arrays
-
-## Lab
-
-Here is the rainfall data recorded at the Dublin Airport over 12 months of 2010:
-
-| Month | Amount in mm |
-|-------|--------------|
-| Jan | 45 |
-| Feb | 37 |
-| Mar | 55 |
-| Apr | 27 |
-| May | 38 |
-| Jun | 50 |
-| Jul | 79 |
-| Aug | 48 |
-| Sep | 104 |
-| Oct | 31 |
-| Nov | 100 |
-| Dec | 58 |
-
-Create a Processing sketch and do the following:
-
-- Allocate two arrays for storing the month names and the rainfall data
-- Calculate the average rainfall for that year
-- Calculate the month with the highest rainfall
-- Calculate the month with the lowest rainfall
-
-Now see if you can write code to generate the following graphs of the rainfall data:
-
-- A bar chart:
-
-  ![Sketch](images/p37.png)
-
-  Start by drawing the axis, then draw the ticks and print the text, then draw the bars. You can use ```textAlign(CENTER, CENTER)``` to align the text
-  Use the HSB color space to assign different colors to each bar
-
-- A trend line:
-
-	![Sketch](images/p38.png)
-
-  This one is a bit trickier because you have to calculate the start xy and end xy for each line. Your for loop for drawing the trend lines can start at 1 instead of 0 and then you can get the previous value for the start of each line by taking rainfall[i - 1].
-
-- A pie chart 
-
-	![Sketch](images/p39.png)
-
-	You can use the the [arc function](https://processing.org/reference/arc_.html) to draw arcs and sin & cos to calculate the x and y coordinates to print the text. This one is the most challenging. Remember that a pie chart shows the proportion of each data point in the sum of all the data, so you will have to calculate the sum of all the rain fall and figure out how much each month is relative to the sum. It's best to draw the segments first and then draw the labels. Your map function might look something like this:
-
-	```Java
-	float angle = map(rainfall[i], 0, sum, 0, TWO_PI);
-	```
-
-
-# Week 5 - Loops
-
-### Learning Outcomes
-- Using loops in programming: while loop, for loop
-- Learning nested loops
-- Creating and drawing funky sketches
-- A very good [tutorial](https://csee.bangor.ac.uk/project-rainbow/create-a-coloured-grid-in-processing/) on creating a coloured grid (by Jonathan)
-
-## Lab
-[Loop Practice](https://docs.google.com/document/d/1R8eRS-vLJVhUp5U5irNQOG5nbvKlVaPu/edit?usp=sharing&ouid=113463557400115436734&rtpof=true&sd=true)
-(Reference: Retrieved from previous year's lab in [this link](https://github.com/skooter500/GP-2020-2021))
-- Task 1: Simple sketches
-- Task 2: Nested loops
-- Task 3: Some crazy stuff
-
 
 # Week 4 - Conditional
 
@@ -235,7 +59,7 @@ Now see if you can write code to generate the following graphs of the rainfall d
 ## Lab
 ### Learning Outcomes
 - Use numeric variables in a sketch
-- Use operatorts on variables
+- Use operators on variables
 - Use trigonometry
 - Make beautiful things
 
@@ -302,7 +126,7 @@ There are few things you can try (but you will probably have to read ahead and f
 # Week 1
 
 ## Lecture
-- [Introduction Slides]()
+- [Introduction Slides](https://tudublin-my.sharepoint.com/:p:/g/personal/bryan_duggan_tudublin_ie/EV-PGwj9NsxNiG31kq8iOAMBUw4lhUTDxzStv0OKhWl6bA?e=uF9T0i)
 - [eye sketch](sketches/eye.pde)
 
 ## Lab
