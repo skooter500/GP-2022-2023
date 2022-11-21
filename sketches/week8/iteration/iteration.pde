@@ -21,8 +21,23 @@ void draw()
   while(y <= 180)
   {
     line(220, y, 320, y);
-    //y += 20;
+    y += 20;
   }
+  
+  for(float f = 100; f <= 180; f += 20) //<>//
+  {
+    line(340, f, 450, f);    
+  }
+  
+  int numLines = 5;
+  float s = 100;
+  float gap = 20;
+  for(int i = 0 ; i > numLines; i ++)
+  {
+    float f = s + i * gap;
+    line(460, f , 480, f);
+  }
+  
   
   
 }
