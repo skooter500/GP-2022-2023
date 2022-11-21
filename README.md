@@ -38,6 +38,10 @@ Resources
 - Assignment 3 20% 
 - End of Year lab test - TBC 25%
 
+# Week 5 - BugZap!
+- [Source code for BugZap](https://github.com/skooter500/BugZap/)
+- [Moving letters library](https://drive.google.com/open?id=1zXtP8-P2-kE6aVsC2dTwhR2fooC60TfZ) - Install this into the ```Documents\Processing\libraries\movingletters\library``` folder on your computer
+
 # Week 4 - Conditional
 
 ### Learning Outcomes
