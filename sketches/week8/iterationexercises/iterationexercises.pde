@@ -53,7 +53,19 @@ void draw()
      }
      case 2:
      {
-       
+       int numCircles = max(1, mouseX / 10);
+       float w = width / (float) numCircles;
+       float r = w * 0.5f;
+       float cgap = 255 / (float) (numCircles * 2);
+       for(int row = 0 ; row < numCircles ; row ++)
+       {
+         for (int col = 0 ; col <numCircles ; col ++)
+         {
+           float c = ((row + col + ccycle) * cgap) % 256;
+           fill(c, 255, 255);
+           circle(r + w * col, r + w * row, w);
+         }
+       }
        break;
      }
      case 3:
@@ -63,7 +75,7 @@ void draw()
       
      
   }
-  ccycle ++;
+  ccycle += mouseY * 0.01f;
         
  
   
