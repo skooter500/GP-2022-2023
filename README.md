@@ -17,14 +17,19 @@ Resources
 * [Games Fleadh](http://www.gamesfleadh.ie/)
 
 ## Past Exams
+- [Christmas & Summer Lab Tests 2019-2020](https://github.com/skooter500/GP-2019-2020) 
+- [Christmas Lab Test 2018](https://github.com/skooter500/GPLabTest12018)
+- [Christmas Lab Test 2017](https://github.com/skooter500/GP-LabTest1-2017)
+- [Christmas Lab Test 2016](https://github.com/skooter500/GP_Lab_Test_1)
+- [Christmas Lab Test 2015](https://github.com/skooter500/dt508_2015_labtest1)
+- [End of year lab test 2022](https://github.com/skooter500/GP-Test-2022/)
 - [End of year Lab test 2020](https://github.com/skooter500/GP-2020-2021)
 - [End of year Lab Test 2019](https://github.com/skooter500/GP-LabTest2-2019)
 - [Supplemental Lab Test 2019](https://github.com/skooter500/gp2019-august-lab-test)
-- [Supplemental Lab Test 2018](https://github.com/skooter500/GP-Autumn-Lab-Test-2018)
-- [Lab Test 1 2016](https://github.com/skooter500/GP_Lab_Test_1)
+- [Supplemental Lab Test 2018](https://github.com/skooter500/GP-Autumn-Lab-Test-2018)`
+- [Supplemental Lab Test 2018](https://github.com/skooter500/GP-2017-2018/blob/master/labtest.md)
 - [Supplemental lab test 2 2016](https://github.com/skooter500/DT508-Lab-Test-Supplemental-2016)
 - [End of year lab test 2016 Solution](https://github.com/skooter500/DT508-Lab-Test-Solution-2016)
-- [Lab Test 1 2015](https://github.com/skooter500/dt508_2015_labtest1)
 
 ## Contact the lecturer
 * Email: bryan.duggan@tudublin.ie
@@ -37,6 +42,9 @@ Resources
 - Assignment 2 31st January 15%
 - Assignment 3 20% 
 - End of Year lab test - TBC 25%
+
+## Week 8 - Arrays
+- [Arrays example we made]()
 
 ## Week 7 - More Loops
 
