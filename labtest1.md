@@ -10,6 +10,8 @@ Rules:
 - This test is *in person* unless by prior arrangement
 - Anyone who has arranged in advance to take the test online should [join this teams meeting](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTFjYjY0OWEtMTBkYi00ZTlhLWJhZjAtMzY0ODJiMzA0YjQ0%40thread.v2/0?context=%7b%22Tid%22%3a%22766317cb-e948-4e5f-8cec-dabc8e2fd5da%22%2c%22Oid%22%3a%2261aab78b-a857-4647-9668-83d4cca5de03%22%7d)
 
+Register on [this module and submit your Lab Tests and Christmas Cards](https://brightspace.tudublin.ie/d2l/home/240307)
+
 This is the inspiration for the sketch you will be making today in the exam:
 
 ![image](images/love_is_love.jpg)
