@@ -1,7 +1,8 @@
 void setup()
 {
-  fullScreen();
+  fullScreen(P3D, SPAN);
   //size(500, 500);
+  smooth();
   initialiseSnow();
   colorMode(HSB);
 }
@@ -14,7 +15,7 @@ void initialiseSnow()
   }
 }
 
-int snowCount = 1000;
+int snowCount = 2000;
 float[] x = new float[snowCount];
 float[] y = new float[snowCount];
 int[] c = new int[snowCount];

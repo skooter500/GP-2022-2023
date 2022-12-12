@@ -49,48 +49,39 @@ void setup()
     {
       maxIndex = i;
     }
- }
- 
- println("Month: " + months[minIndex] + " had the lowest rainfall of: " + rainfall[minIndex]);
- println("Month: " + months[maxIndex] + " had the highest rainfall of: " + rainfall[maxIndex]);
+   }
   
-  // Max
-  
-  // Average
   
   //Bubble Sort!
   //Keep swapping out of order elements until there are no more swaps
-  // Example:
-  10 2 9 18
-  Iteration 1
+
   
-  //To swap elements
-  float temp = rainfall[i];
-  rainfall[i] = rainfall[i + 1];
-  rainfall[i + 1] = temp;
-  
+  int swaps;
   do
   {
+    swaps = 0;
+    for(int i = 0 ; i < rainfall.length -1 ; i ++)
+    {
+      if (rainfall[i + 1] < rainfall[i])
+      {
+        float temp = rainfall[i];
+        rainfall[i] = rainfall[i + 1];
+        rainfall[i + 1] = temp;
+        swaps ++;
+      }
+    } 
   }
-  while(something);
+  while(swaps > 0);
   
-  while(something)
-  {
-  }
-  
-  for(int i = 0 ; i < 10 ; i ++)
-  {
-  }
-  
+  //To swap elements
+  // float temp = rainfall[i];
+  // rainfall[i] = rainfall[i + 1];
+  // rainfall[i + 1] = temp;
   
   // Selection Sort!
   // Put the highest element at the end, then put the next highest as the 
   // second end and keep going until there are no more
-  
-  
-  
-  
-  
+
 }
 
 float[] rainfall = {100, 200, 350, 200, 50, 10, 5,10, 25, 100, 220, 400};
@@ -104,6 +95,6 @@ void draw()
   for(int i = 0 ; i < rainfall.length ; i ++)
   {
     float x = map(i, 0, rainfall.length, 0, width);
-    
+    rect(x, height, w, -rainfall[i]);
   }
 }
