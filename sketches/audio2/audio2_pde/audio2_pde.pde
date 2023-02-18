@@ -120,10 +120,11 @@ void draw()
   float freqFFT = fft.indexToFreq(maxIndex);
   text(freqFFT, 10, 200);
   
-  float y = map(maxIndex, 10, 24, height, 0);
+  float y = map(maxIndex, 10, 30, height, 0);
   lerpedY = lerp(lerpedY, y, 0.1f);
-  
-  circle(100, y, 30);
+  float c = map(lerpedY, height, 0, 255, 0);
+  fill(c, 255, 255);
+  circle(100, lerpedY, 30);
   
 }
 
