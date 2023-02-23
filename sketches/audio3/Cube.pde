@@ -28,8 +28,9 @@ class Cube
   void render()
   {
     pushMatrix();
-    fill(c);
-    noStroke();
+    strokeWeight(5);
+    noFill();
+    stroke(c);
     translate(pos.x, pos.y);  
     rotateX(theta);
     rotateY(theta);  
