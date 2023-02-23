@@ -12,9 +12,11 @@ void setup()
   cube1 = new Cube(); 
   cube = new Cube(100, 0.1f, color(100, 255, 255), width / 2 + 100 , height / 2 + 100);
   
+  minim = new Minim(this);
   ai = minim.getLineIn(Minim.MONO, 512, 44100, 16);
-  ap = minim.loadFile(
-  ab = ai.mix;
+  ap = minim.loadFile("tomp3.cc - 08 PsychNerD and Marco G  More Cowbell.mp3", 512); 
+  ap.play();
+  ab = ap.mix;
   
   
   
@@ -39,8 +41,8 @@ void draw()
   cube.update();
   cube.render();
   
-  cube1.update();
-  cube1.render();
+  //cube1.update();
+  //cube1.render();
   
   
 }
