@@ -25,7 +25,7 @@ void makeCubes(int count)
   cubes.clear();
   float halfW = width / 2;
   float halfH = height / 2;
-  float radius = 500;
+  float radius = 300;
   for(int i = 0 ; i < count ; i ++)
   {
     float theta = map(i, 0, count, 0, TWO_PI);
@@ -38,8 +38,8 @@ void makeCubes(int count)
 
 void setup()
 {
-  //size(512, 500, P3D);
-  fullScreen(P3D, SPAN);
+   size(800 , 800, P3D);
+  //fullScreen(P3D, SPAN);
   colorMode(HSB);
   
   cube1 = new Cube(); 
@@ -47,9 +47,9 @@ void setup()
   
   minim = new Minim(this);
   ai = minim.getLineIn(Minim.MONO, 512, 44100, 16);
-  ap = minim.loadFile("tomp3.cc - 08 PsychNerD and Marco G  More Cowbell.mp3", 512); 
-  ap.play();
-  ab = ap.mix;
+  //ap = minim.loadFile("tomp3.cc - 08 PsychNerD and Marco G  More Cowbell.mp3", 512); 
+  //ap.play();
+  ab = ai.mix;
   
   
   
@@ -70,6 +70,7 @@ float lerpedAverage = 0;
 
 void draw()
 {
+  rotateX(lerpedAverage);
   float total = 0;
   for(int i = 0 ; i < ab.size() ; i ++)
   {
@@ -82,13 +83,12 @@ void draw()
   strokeWeight(2);
   lights();
   
-  
   for(int i = 0 ; i < cubes.size() ; i ++)
   {
     Cube cube = cubes.get(i);
     cube.c = color(map(lerpedAverage, 0.0f, 1f, 0,255), 255, 255);
     cube.speed = map(lerpedAverage, 0.0f, 1.0f, 0,0.2);
-    cube.size = map(lerpedAverage, 0, 1, 200, 500);
+    cube.size = map(lerpedAverage, 0, 1, 200, 800);
     cube.update();
     cube.render();
   
