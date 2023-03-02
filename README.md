@@ -37,11 +37,12 @@ Resources
 
 ## Assignments
 
-- December - Assignment 1 submission 15%
-- December Lab Test 25%
-- Assignment 2 31st January 15%
-- Assignment 3 20% 
-- End of Year lab test - TBC 25%
+- [Assignments](assignments.md)
+
+## Semester 2
+
+# Mostly Audio Analysis 
+
 
 ## Week 8 - Arrays
 - [Arrays example we made]()
