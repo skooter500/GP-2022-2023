@@ -20,7 +20,7 @@ Assignment Brief: In this creative coding team project, you will work in a team 
 
 - Choose a song that you all agree on that inspires you and reflects your style and interests. You can use any genre, but try to select a song that has a clear structure, rhythm, and mood.
 
-- Create a Github repository and use it to manage your project. Each team member should make commented commits to the repository to track their contributions. Here is [a ](assignmentreadme.md) you can include.
+- Create a Github repository and use it to manage your project. Each team member should make commented commits to the repository to track their contributions. Here is a [readme.md](assignmentreadme.md) you can include to document your work.
 
 - Use Processing, Minim, or the Processing Sound library to analyze the audio of the song and extract its main characteristics, such as frequency, and volume.
 
