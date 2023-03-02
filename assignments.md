@@ -43,14 +43,16 @@ Requirements:
 You will be graded based on the following criteria:
 
 Creativity, originality and novelty in the visual elements and overall design: 35%
+
 Technical proficiency in using Processing, Minim, or the Processing Sound library to analyze the audio and generate responsive visuals: 35%
+
 Collaboration and teamwork in dividing tasks and managing the project using Github: 15%
+
 Quality and professionalism of the final program and video presentation: 15%
 
 Check out [playlists of previous assignments](https://www.youtube.com/@skooter500/playlists) for inspiration.
 
-Marking Scheme:
-Rubric
+## Rubric
 
 | Grade | Description |
 | ------|-------------|
